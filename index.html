@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="개인 포트폴리오 — 프로젝트와 연락처" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="logo" aria-label="홈으로 이동">Do it!</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="주요 내비게이션">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#projects">프로젝트</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero">
+      <div class="hero-bg" role="img" aria-label="코드 에디터와 개발 작업 화면을 연상시키는 히어로 배경"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Creative Developer</p>
+          <h1 class="hero-title">아이디어를<br />경험으로 만듭니다.</h1>
+          <p class="hero-lead">
+            인터랙션과 타이포그래피에 집중한 웹 제작. 브랜드와 사용자 사이의 간격을 줄입니다.
+          </p>
+          <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title">프로젝트</h2>
+          <p class="section-desc">최근에 완료하거나 진행 중인 프로젝트입니다.</p>
+        </header>
+        <ul class="project-grid">
+          <li>
+            <article class="project-card">
+              <div class="project-card-media">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                  alt="웹 대시보드와 데이터 시각화 화면"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-body">
+                <span class="project-tag">Product</span>
+                <h3 class="project-title">Lumen Dashboard</h3>
+                <p class="project-excerpt">실시간 데이터 시각화와 팀 협업을 위한 웹 대시보드.</p>
+                <a href="#contact" class="project-link">자세히 <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project-card">
+              <div class="project-card-media">
+                <img
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                  alt="노트북에서 웹 개발 작업 중인 화면"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-body">
+                <span class="project-tag">Branding</span>
+                <h3 class="project-title">Northwind Identity</h3>
+                <p class="project-excerpt">B2B SaaS를 위한 톤앤매너와 디지털 가이드라인 정립.</p>
+                <a href="#contact" class="project-link">자세히 <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="project-card">
+              <div class="project-card-media">
+                <img
+                  src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80"
+                  alt="소스 코드가 표시된 개발 화면"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-card-body">
+                <span class="project-tag">Open Source</span>
+                <h3 class="project-title">Flow CLI</h3>
+                <p class="project-excerpt">워크플로 자동화를 위한 경량 CLI 도구와 문서 사이트.</p>
+                <a href="#contact" class="project-link">자세히 <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container contact-layout">
+        <header class="section-head section-head--narrow">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-desc">프로젝트 문의나 협업 제안을 남겨 주세요. 평일 기준 48시간 내에 답장드립니다.</p>
+        </header>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <label class="form-field">
+              <span class="form-label">이름</span>
+              <input type="text" name="name" id="name" autocomplete="name" required placeholder="조서현" />
+              <span class="form-error" id="name-error" role="alert"></span>
+            </label>
+            <label class="form-field">
+              <span class="form-label">이메일</span>
+              <input type="email" name="email" id="email" autocomplete="email" required placeholder="you@example.com" />
+              <span class="form-error" id="email-error" role="alert"></span>
+            </label>
+          </div>
+          <label class="form-field">
+            <span class="form-label">제목</span>
+            <input type="text" name="subject" id="subject" required placeholder="문의 제목" />
+            <span class="form-error" id="subject-error" role="alert"></span>
+          </label>
+          <label class="form-field">
+            <span class="form-label">메시지</span>
+            <textarea name="message" id="message" rows="5" required placeholder="내용을 입력해 주세요."></textarea>
+            <span class="form-error" id="message-error" role="alert"></span>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">보내기</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© <span id="year"></span> Studio. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#contact">Email</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hero">Top</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
